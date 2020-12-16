@@ -174,8 +174,9 @@
             i;
         for (i = 0; i < menuitem.length; ++i) {
             menuitem[i].addEventListener('click', function () {
-                document.querySelector('body').classList.toggle('menu-open');
-                // alert('lolol')
+                if (document.querySelector('body.menu-open')) {
+                    document.querySelector('body').classList.toggle('menu-open')
+                }
             })
         }
 
