@@ -13,6 +13,11 @@
 .photo {
     background-image: url('../img/photo.jpg');
     mix-blend-mode: luminosity;
+    cursor: crosshair;
+}
+
+.photo:hover {
+    mix-blend-mode: normal;
 }
 
 .hero {
@@ -86,6 +91,11 @@
     width: 16px;
 }
 
+.max-width {
+    max-width: 1440px;
+    margin: auto;
+}
+
 @media (max-width: 640px) {
 
     body.menu-open {
@@ -110,6 +120,14 @@
     .menu-open .menu-list {
         visibility: visible;
         opacity: 1;
+    }
+
+}
+
+@media (min-height: 800px) {
+
+    .leading-hero {
+        line-height: calc(1.5em + 1vh);
     }
 
 }

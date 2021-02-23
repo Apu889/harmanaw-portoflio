@@ -648,6 +648,10 @@ video {
   line-height: 2.5rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .leading-tight {
   line-height: 1.25;
 }
